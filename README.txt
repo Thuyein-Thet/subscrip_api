@@ -64,4 +64,5 @@ Method => POST
 Then, send noti about new posts to subscribers with command.
 $ php artisan send
 
-If you want to run command with schedule , need to add config in your server's cron tab.
+If you want to run command with schedule , need to add config in crontab. Then run,
+$ php artisan schedule:work
