@@ -20,15 +20,15 @@ MAIL_PASSWORD=fdsfdsfsdfds   #this is app key from gmail
 MAIL_FROM=Subscription Noti App
 MAIL_ENCRYPTION=tls
 
-Then run migrate,
+Then composer install and run migrate,
 
 $ php artisan migrate
 
-There are 4 tables. Need to make db:seed for two tables User and Websites.
+There are 4 tables. Need to make db:seed for two tables Users and Websites.
 $ php artisan db:seed --class=UserSeeder
 $ php artisan db:seed --class=WebsiteSeeder
 
-Then you can able to use apis. There are two apis, one for create post and another is to subscribe websites.
+Then you can able to use API. There are two APIs, one for create post and another is to subscribe websites.
 
 To create Post
 --------------
