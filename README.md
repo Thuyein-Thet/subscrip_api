@@ -1,4 +1,26 @@
-Fist change config in .env migration, then mail setting also. Then run migrate,
+Fist change config in .env for migration and also for mail setting also.
+For example, I use mysql for db and gmail for mail sender.
+
+mysql Config
+------------
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=dbname
+DB_USERNAME=dbUsrName
+DB_PASSWORD=password
+
+Mail Config
+-----------
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=mailaddress@gmail.com
+MAIL_PASSWORD=fdsfdsfsdfds   #this is app key from gmail
+MAIL_FROM=Subscription Noti App
+MAIL_ENCRYPTION=tls
+
+Then run migrate,
 
 $ php artisan migrate
 
